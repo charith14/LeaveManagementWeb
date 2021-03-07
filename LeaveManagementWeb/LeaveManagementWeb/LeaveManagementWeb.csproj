@@ -110,6 +110,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103070433230_Initial1.cs" />
+    <Compile Include="Migrations\202103070433230_Initial1.designer.cs">
+      <DependentUpon>202103070433230_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\LeaveAllocation.cs" />
+    <Compile Include="Models\LeaveContext.cs" />
+    <Compile Include="Models\LeaveEntry.cs" />
+    <Compile Include="Models\LeaveType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -124,7 +134,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202103070433230_Initial1.resx">
+      <DependentUpon>202103070433230_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
